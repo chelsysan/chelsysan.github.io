@@ -1,9 +1,14 @@
-#title {
+#description {
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
   
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
