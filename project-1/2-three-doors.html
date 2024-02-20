@@ -6,11 +6,12 @@
     <title>Three Doors</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <h1> Lobby </h1>
-    <h2> I am in the lobby of a house, surrounded by three doors. </h2>
-    
-    <img src="../img/three doors draft.jpg"  alt="Threedoors" usemap="#doorsmap" width="1000" height="460" class="center">
+<body></body>
+    <div class="my-container">
+      <h1> Lobby </h1>
+      <h3> 1.01.2024 </h3>
+      <p> Leaving the comfort of my bedroom, I step out into a large area resembling a lobby of some kind. I am immediately confronted by three identical doors. </p>
+    </div>
 
     <a href="./3-endless-corridor.html">corridor</a>
     <a href="./7-stairlike-maze.html">maze</a>
@@ -18,11 +19,16 @@
 
     <a href="./index.html">bedroom</a>
 
-<map name="doorsmap">
-  <area shape="rect" coords="959,1867,96,402" alt="1stdoor" href="./3-endless corridor.html">
-  <area shape="rect" coords="290,172,333,250" alt="2nddoor" href="./7-stairlike-maze.html">
-  <area shape="rect" coords="337,300,44" alt="3rddoor" href="./9-fallthrough-floors.html">
-</map>
+    <div id="container">
+      <div id="image_container">
+        <img src="../img/three doors draft.jpg"  alt="Threedoors" usemap="#image_map" width="1000" height="460" class="center">
+        <map name="image-map">
+          <area target="" alt="Door 1..." title="Door 1..." href="./3-endless-corridor.html" coords="505, 165, 640, 270" shape="rect">
+          <area target="" alt="Door 2..." title="Door 2..." href="./7-stairlike-maze.html" coords="1249,36,2116,1495" shape="rect">
+          <area target="" alt="Door 3..." title="Door 3..." href="./9-fallthrough-floors.html" coords="2450,36,3320,1498" shape="rect">
+      </map>
+      </div>
+    </div>
 
 
 </body>

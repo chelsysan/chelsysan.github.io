@@ -11,4 +11,25 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  #fullscreen {
+    width: 100%;
+    object-position: top;
+  }
+
+  .my-container {
+    width: 500px
+  }
+  
+  #rotate_img {
+    animation: rotateImg 2s linear infinite;
+    @keyframes rotation {
+      from {
+        transform:rotate(0deg);
+    }
+      to {
+        transform:rotate(360deg);
+    }
+  }
+  }
   
