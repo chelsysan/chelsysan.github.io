@@ -1,14 +1,14 @@
 .img-text {
     position: absolute;
-    top: 10px;
-    left: 15px;
+    text-align: left;
+    margin-top: 5px;
     }
 
 .img-text h1{
     font-family: "Micro 5", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 10vw;
+    font-size: 9vw;
     color:rgb(250, 255, 223)
 }
 
