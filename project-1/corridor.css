@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#fullscreen {
+    width: 100%;
+    object-position: top;
+  }
+
+.top-center {
+    position: absolute;
+    top: 8px;
+    right: 590px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

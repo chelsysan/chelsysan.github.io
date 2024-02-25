@@ -1,12 +1,4 @@
-#description {
-    color: #FFFFFF;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    text-transform: lowercase;
-  }
-  
-  .center {
+ .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,15 +13,12 @@
     width: 500px
   }
   
-  #rotate_img {
-    animation: rotateImg 2s linear infinite;
-    @keyframes rotation {
-      from {
-        transform:rotate(0deg);
-    }
-      to {
-        transform:rotate(360deg);
-    }
-  }
-  }
+.word-container h1 {
+    font-family: "Micro 5", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color:rgb(255, 255, 255)
+}
   
