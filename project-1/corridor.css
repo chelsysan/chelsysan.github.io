@@ -60,3 +60,12 @@ body {
   top: 140px;
   left: 900px;
 }
+
+.hide {
+  display: none;
+}
+    
+p:hover .hide {
+  display: block;
+  color: rgb(211, 119, 119);
+}

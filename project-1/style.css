@@ -15,7 +15,7 @@ body {
   
   .word-container {
     position: absolute;
-    text-align: left;
+    text-align: center;
     margin-top: -3%;
     margin-left: 1%;
     line-height: 0px;
@@ -40,12 +40,12 @@ body {
   
   .word-paragraph {
     position: absolute;
-    text-align: left;
+    text-align: center;
       margin-top: 1%;
     margin-left: 1%;
   }
   
-  .word-paragraph p {
+  .word-paragraph p{
     font-family: 'Alegreya', serif;
     width: 500px;
     font-size: 6vw;
