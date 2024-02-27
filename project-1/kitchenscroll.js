@@ -11,3 +11,11 @@ window.addEventListener("scroll", () => {
         window.scrollTo(0, 0)
     }
 })
+
+window.addEventListener("scroll", () => {
+    const halfWidth = original.clientWidth
+
+    if (window.scrollX > halfWidth) {
+        window.scrollTo(0, 0)
+    }
+})

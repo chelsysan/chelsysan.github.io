@@ -1,0 +1,57 @@
+.word-container {
+    position: absolute;
+    text-align: bottom;
+    margin-top: 32%;
+    margin-left: 25%;
+    line-height: 0px;
+}
+  
+.word-container h1{
+    font-family: "Micro 5", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw;
+    color:rgb(255, 255, 255)
+}
+  
+.word-container h3{
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    font-size: 6vw;
+    margin: 0;
+    color:rgb(255, 255, 255)
+}
+  
+.word-paragraph {
+    position: absolute;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+  
+.word-paragraph p{
+    font-family: 'Alegreya', serif;
+    width: 500px;
+    font-size: 15vw;
+    text-align: left;
+    font-style: normal;
+    font-size: medium;
+    margin-top: 110%;
+    margin-left: 120%;
+    color:rgb(255, 255, 255)
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    background: black
+}
