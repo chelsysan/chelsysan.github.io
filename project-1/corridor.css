@@ -70,6 +70,31 @@ p:hover .hide {
   color: rgb(211, 119, 119);
 }
 
+.container .btn {
+  position: absolute;
+  overflow:hidden; 
+  right: 0px;
+  bottom: 0px;
+  font-size: 5vw
+  font-family: 'Alegreya', serif;
+  padding: 16px 30px;
+  transform: translate(-390%, -40%);
+  background-color: rgb(245, 150, 150);
+  color: rgb(234, 255, 232);
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  text-align: center;
+}
+  
+.container .btn:hover {
+  background-color: black;
+  color: rgb(118, 114, 114);
+  opacity: 0.6; 
+  display: block;
+}  
+
 .container .corrybtn {
   position: absolute;
   top: 50%;
