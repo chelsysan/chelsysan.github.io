@@ -66,6 +66,55 @@ img{
     animation: bannermove 40s linear infinite;
 }
 
+.container .basebtn {
+    position: absolute;
+    overflow:hidden; 
+    right: 0px;
+    bottom: 0px;
+    font-size: 5vw
+    font-family: 'Alegreya', serif;
+    transform: translate(-140%, -40%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align: center;
+  }
+    
+  .container .basebtn:hover {
+    background-color: black;
+    color: rgb(177, 164, 164);
+    opacity: 1; 
+    display: block;
+  } 
+
+.container .lobbybtn {
+    position: absolute;
+    overflow:hidden; 
+    right: 0px;
+    bottom: 0px;
+    font-size: 5vw
+    font-family: 'Alegreya', serif;
+    padding: 16px 30px;
+    transform: translate(-740%, -500%);
+    background-color: rgb(47, 32, 113);
+    color: rgb(234, 255, 232);
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align: center;
+}
+    
+.container .lobbybtn:hover {
+    background-color: black;
+    color: rgb(118, 114, 114);
+    opacity: 0.6; 
+    display: block;
+}  
+
 @keyframes bannermove {
     0% {
         transform: translate(0, 0);
@@ -78,3 +127,10 @@ img{
     display: none;
 }
 
+enter {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transform: translate(100%, 100%);
+}
+  
