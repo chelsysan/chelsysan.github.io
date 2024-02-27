@@ -69,3 +69,24 @@ p:hover .hide {
   display: block;
   color: rgb(211, 119, 119);
 }
+
+.container .corrybtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  transform: translate(-80%, 30%);
+  -ms-transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  padding: 100px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  text-align: center;
+}
+  
+.container .corrybtn:hover {
+  color: rgb(150, 141, 141);
+  opacity: 0.6; 
+  display: block;
+}
