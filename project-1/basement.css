@@ -1,6 +1,10 @@
 body{
     background: rgb(0, 0, 0)
 }
+
+img{
+    margin-top: 50px;
+}
   
 .center {
     display: block;
@@ -59,7 +63,7 @@ body{
 .kitchen {
     margin-top:0px; 
     left:0px; 
-    animation: bannermove 30s linear infinite;
+    animation: bannermove 40s linear infinite;
 }
 
 @keyframes bannermove {
