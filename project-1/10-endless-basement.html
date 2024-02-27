@@ -12,8 +12,15 @@
 </head>
 <body>
 
-    <div class="hide" class="word-container">
+    <div class="word-container" class="sticky">
         <h1>Endless Basement</h1>
+        <h3>1.16.24</h3>
+    </div>
+
+    <div class="word-paragraph" class="sticky">
+        <p> I somehow managed to go through the floors of the apartment as someone was trying to follow me, ending up in the basement of the building. Except the basement itself was strange because it wasn't really a basement... it was more like an intricate layout of repeating kitchen compartments, all of which lead into one another due to their proximity.
+            It was unnerving to me, but the most unsettling part was this small, weird doppleganger entity that would mimic the identity of the viewer and would have positive, neutral, and negative reactions based on the person's facial expressions.</p>
+        </p>
     </div>
     
         <section>
@@ -35,6 +42,13 @@
             margin-left: auto;
             margin-right: auto;
         }
+        
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+         background-color: rgba(255, 255, 0, 0);
+         padding: 50px;
     </style>
 
     <script src="kitchenscroll.js"></script>

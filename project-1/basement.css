@@ -15,7 +15,7 @@ body{
   
 .word-container {
     position: absolute;
-    text-align: center;
+    text-align: left;
     margin-top: -3%;
     margin-left: 1%;
     line-height: 0px;
@@ -40,7 +40,7 @@ body{
   
 .word-paragraph {
     position: absolute;
-    text-align: center;
+    text-align: left;
     margin-top: 1%;
     margin-left: 1%;
 }
