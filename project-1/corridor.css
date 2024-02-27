@@ -143,7 +143,6 @@ p:hover .hide {
 
 .container .firebtn {
   position: absolute;
-  overflow:hidden; 
   right: 0px;
   bottom: 0px;
   font-size: 5vw
