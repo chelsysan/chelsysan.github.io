@@ -70,6 +70,31 @@ p:hover .hide {
   color: rgb(47, 32, 113);
 }
 
+.container .firebtn {
+  position: absolute;
+  overflow:hidden; 
+  right: 0px;
+  bottom: 0px;
+  font-size: 5vw
+  font-family: 'Alegreya', serif;
+  padding: 16px 30px;
+  transform: translate(-400%, -400%);
+  background-color: rgb(47, 32, 113);
+  color: rgb(234, 255, 232);
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  text-align: center;
+}
+  
+.container .firebtn:hover {
+  background-color: black;
+  color: rgb(118, 114, 114);
+  opacity: 0.6; 
+  display: block;
+}  
+
 .container .btn {
   position: absolute;
   overflow:hidden; 
@@ -135,30 +160,6 @@ p:hover .hide {
 }
   
 .container .lobbybtn:hover {
-  background-color: black;
-  color: rgb(118, 114, 114);
-  opacity: 0.6; 
-  display: block;
-}  
-
-.container .firebtn {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  font-size: 5vw
-  font-family: 'Alegreya', serif;
-  padding: 16px 30px;
-  transform: translate(-50%, -50%);
-  background-color: rgb(47, 32, 113);
-  color: rgb(234, 255, 232);
-  padding: 20px 40px;
-  border: none;
-  cursor: pointer;
-  border-radius: 40px;
-  text-align: center;
-}
-  
-.container .firebtn:hover {
   background-color: black;
   color: rgb(118, 114, 114);
   opacity: 0.6; 

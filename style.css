@@ -1,0 +1,27 @@
+head, html {
+  cursor: url(./home_imgs/cursortest.png), auto !important;
+  height: 100%
+}
+
+body{
+  background-color: rgba(253, 40, 196, 0.343);
+}
+
+
+.blocky {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
+  color:rgb(156, 60, 60)
+}
+
+.title {
+  width: 5vw
+  
+}
+
+.house {
+  width: 100vw;
+  text-align: center;
+}
