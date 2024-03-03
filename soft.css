@@ -1,0 +1,100 @@
+body {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #30435a 0%, #090a0f 100%);
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px white);
+}
+
+#container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+#container2 {
+  display: flex;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(18%, -50%);
+}
+
+/* Parent container for both letters H and I */
+.letter {
+/* Set to flex with wrapping so the cell pieces sit side by side and wrap */
+  display: flex;
+  flex-wrap: wrap;
+/* The below margin controls spacing between each letter */
+  margin-right: 50px;
+}
+
+/* Each "pixel" */
+.cell {
+  width: 30px;
+  height: 30px;
+  gap: 0px;
+}
+
+.middle {
+  width: 30px;
+  height: 45px;
+}
+
+.top-round {
+  border-radius: 0px 80px 80px 0px; 
+}
+
+.btm-round {
+  border-radius: 80px 0px 0px 80px; 
+}
+
+.topleft-round {
+  border-radius: 80px 0px 0px 0px;
+}
+
+.btmleft-round {
+  border-radius: 0px 0px 0px 80px;
+}
+
+.topright-round {
+  border-radius: 0px 80px 0px 0px;
+}
+
+.btmright-round {
+  border-radius: 0px 0px 80px 0px;
+}
+
+/* Multiply the width of each cell by the number of cells you need in each row. For the letter H, I need 4 cells in each row, and each cell width is 30px. Therefore, 4 * 30px = 120px.*/
+.s {
+  width: 120px;
+}
+
+/* Multiply the width of each cell by the number of cells you need in each row. For the letter I, I just need 1 cell in each row, and each cell width is 30px. Therefore, 1 * 30px = 30px.*/
+.o {
+  width: 120px;
+}
+
+.f {
+  width: 90px;
+}
+
+.t {
+  width: 90px;
+}
+
+
+.fill {
+  filter: blur(8px);
+  background-color: antiquewhite;
+/*   This is for the hover transition. */
+  transition: opacity 0.9s linear;
+}
+
+.fill:hover {
+  opacity: 0;
+}
+
+
+
