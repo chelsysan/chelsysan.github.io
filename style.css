@@ -1,27 +1,65 @@
+* {
+  padding: 2;
+  margin: 2;
+}
 head, html {
   cursor: url(./home_imgs/cursortest.png), auto !important;
   height: 100%
 }
 
 body{
-  background-color: rgba(253, 40, 196, 0.343);
+  background-color: rgba(253, 40, 196, 0.281);
 }
 
+.title h1{
+  width: 5vw
+  font-size: 8vw;
+}
 
 .blocky {
   font-family: "Micro 5", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 5vw;
+  font-size: 7vw;
   color:rgb(156, 60, 60)
-}
-
-.title {
-  width: 5vw
   
 }
 
-.house {
-  width: 100vw;
+a:link {
+  color:rgba(61, 17, 32, 0.769)
+}
+
+
+a:hover {
+  border: 5px dashed papayawhip;
+}
+
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width:100%;
+  margin-left: 50%
+  margin-right: 50%
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box1{
+  width: 45vw;
+  margin-left: 1vw;
   text-align: center;
+  background-color: rgba(254,181,234,255);
+}
+
+.box2{
+  width: 45vw;
+  margin-left: 1vw;
+  text-align: center;
+  align-self: center;
+  background-color: rgba(254,181,234,255);
 }
