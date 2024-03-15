@@ -1,0 +1,22 @@
+body {
+    background-color: palegoldenrod;
+}
+
+#parent-container {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 700px;
+    height: 10vw;
+    margin: auto;
+    background-color: rgb(55, 214, 161);
+}
+
+.pixel {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-style: solid;
+    border-color: whitesmoke;
+}
