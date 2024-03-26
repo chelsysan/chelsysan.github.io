@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAY! DIGITAL TEXTILE</title>
+    
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="./index.html">Beginning</a>
+    <div class="title">
+       <h1>create your own ascii textile!</h1>
+       <h3>^^^^^^^^^^^^^^^^^^^^^^^^</h3>
+       <h3>>>>>>>>>>>>>>>>>>>>>>>>></h3>
+       <h3>()()()()()()()()()()()()()</h3>
+       <h3>-^-^-^-^-^-^-^-^-^</h3>
+       <h3>{.}{.}{}{}{.}{.}{}{}{.}{.}{}{}</h3>
+       <h3>[][][][][][][][][][][][]</h3>
+       <h3>========================</h3>
+       <h3>\\\\\\\\\\\\\\\\\\\\\\\\\</h3>
+    </div>
+
+    <div class="wrapper">
+        <div class="options">
+          <div class="opt-wrapper">
+            <div class="slider">
+              <label for="width-range">grid width</label>
+              <input type="range" id="width-range" min="1" max="35" />
+              <span id="width-value">00</span>
+            </div>
+            <div class="slider">
+              <label for="height-range">grid height</label>
+              <input type="range" id="height-range" min="1" max="35" />
+              <span id="height-value">00</span>
+            </div>
+          </div>
+          <div class="opt-wrapper">
+            <button id="submit-grid">create grid</button>
+            <button id="clear-grid">clear grid</button>
+            <input type="color" id="color-input"/>
+            <button id="erase-btn">erase</button>
+            <button id="paint-btn">paint</button>
+          </div>
+        </div>
+        <div class="container"></div>
+    </div>
+
+    <script> src="script.js"</script>
+</body>
+</html>
