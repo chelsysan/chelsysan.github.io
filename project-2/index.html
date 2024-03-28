@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAY! DIGITAL TEXTILE</title>
+    <title>YAY! MINISONA ^u^</title>
     
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,44 +13,48 @@
 
 <body>
     <div class="title">
-       <h1>create your own ascii textile!</h1>
-       <h3>^^^^^^^^^^^^^^^^^^^^^^^^</h3>
-       <h3>>>>>>>>>>>>>>>>>>>>>>>>></h3>
-       <h3>()()()()()()()()()()()()()()()()</h3>
-       <h3>^-^-^-^-^-^-^-^-^-^-^-^</h3>
-       <h3>{}{}{}{}{}{}{}{}{}{}{}{}</h3>
-       <h3>................................................</h3>
-       <h3>••••••••••••••••••••••••••••••••</h3>
-       <h3>[][][][][][][][][][][][][][][][]</h3>
-       <h3>========================</h3>
-       <h3>\\\\\\\\\\\\\\\\\\\\\\\\</h3>
+       <header> * :˚₊‧ create your own minisona! ‧₊˚: *</header>
+    </div>
+
+    <div class="canvas-bg">
+      <div id="square"></div>
     </div>
 
     <div class="wrapper">
         <div class="options">
           <div class="opt-wrapper">
+            
             <div class="slider">
-              <label for="width-range">grid width</label>
-              <input type="range" id="width-range" min="1" max="35" />
+              <!--body width slider-->
+              <label for="width-range">body width</label>
+              <input type="range" id="width-range" min="10" max="100" value="50" oninput="bodyWidthChange()" />
               <span id="width-value">00</span>
             </div>
+            
             <div class="slider">
-              <label for="height-range">grid height</label>
-              <input type="range" id="height-range" min="1" max="35" />
+              <!--body height slider-->
+              <label for="height-range">body length</label>
+              <input type="range" id="height-range" min="10" max="100" value="50" oninput="bodyHeightChange()" />
               <span id="height-value">00</span>
             </div>
+
           </div>
+
           <div class="opt-wrapper">
             <button id="submit-grid">create grid</button>
             <button id="clear-grid">clear grid</button>
-            <input type="color" id="color-input"/>
+            
+            <!--color picker for body-->
+            <input type="color" id="color-picker" value="#000000" oninput="BodyColorChange()"/>
+
             <button id="erase-btn">erase</button>
             <button id="paint-btn">paint</button>
           </div>
+
         </div>
-        <div class="container"></div>
     </div>
 
     <script>src="script.js"</script>
+  
 </body>
 </html>
