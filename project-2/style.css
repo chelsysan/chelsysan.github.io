@@ -39,15 +39,55 @@ body {
     margin-right: auto;
 
     background-color: rgb(249, 235, 223);
-    outline: 0.1em solid black;
+    outline: 0.3em solid black;
     border-radius: 3px;
+    box-shadow: 10px 10px rgb(91, 170, 154);
 }
 
-#square {
+#body {
+    display: flex;
+    justify-content: center;
+    
     width: 10vw;
     height: 10vw;
     background-color: rgb(0, 0, 0);
 }
+
+.gap {
+    display: flex;
+    gap: 10px; 
+}
+
+#eye {
+    width: 4vw;
+    height: 4vw;
+
+    font-size: 8vw;
+    text-align: center;
+    justify-content: center;
+   
+    color: rgb(99, 241, 189);
+    
+}
+
+#arm1, #arm2 {
+    width: 3vw;
+    height: 3vw;
+    background-color: aqua;
+}
+
+
+#leg1, #leg2 {
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(255, 0, 251);
+}
+
+#leg-gap {
+    width: 3vw;
+    height: 3vw;
+}
+
 
 .wrapper {
     width: 80vmin;
@@ -55,7 +95,7 @@ body {
     transform: translate(-50%, 10%);
     top: 50%;
     left: 50%;
-    padding: 40px 20px;
+    padding: 80px 40px;
 
     background-color: rgb(245, 245, 237);
     border-radius: 8px;
@@ -65,17 +105,19 @@ body {
 
 label {
     display: block;
+    font-size: 3vw;
 }
 
 span {
     position: relative;
     font-size: 22px;
-    bottom: -1px;
+    bottom: 3px;
 }
 
 .opt-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     margin-bottom: 20px;
     gap: 10px;
 }
@@ -86,4 +128,28 @@ button {
     border: 0.1em solid;
     border-radius: 5px;
     padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.99);
+    box-shadow: none;
+    cursor: pointer;
+    background-color: violet;
+}
+
+.slider {
+    accent-color: #f99d1d; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    cursor: grabbing;
+}
+
+input[type=range]::-webkit-slider-runnable-track  {
+    background-color: rgb(242, 201, 97);
+    border-radius: 3vw;
 }

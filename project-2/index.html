@@ -17,7 +17,21 @@
     </div>
 
     <div class="canvas-bg">
-      <div id="square"></div>
+      <div id="arm1"></div>
+
+      <div id="body" class="gap">
+        <div id="eye">-</div>
+        <div id="eye">-</div>
+      </div>
+
+      <div id="arm2"></div>
+      
+      <div id="foot"></div>
+      <div id="leg1"></div>
+      <div id="leg-gap"></div>
+      <div id="leg2"></div>
+      <div id="foot"></div>
+
     </div>
 
     <div class="wrapper">
@@ -27,34 +41,51 @@
             <div class="slider">
               <!--body width slider-->
               <label for="width-range">body width</label>
-              <input type="range" id="width-range" min="10" max="100" value="50" oninput="bodyWidthChange()" />
-              <span id="width-value">00</span>
+              <input type="range" id="width-range" min="10" max="30" value="20" oninput="bodyWidthChange()">
+              <span id="width-value">...</span>
             </div>
             
             <div class="slider">
               <!--body height slider-->
               <label for="height-range">body length</label>
-              <input type="range" id="height-range" min="10" max="100" value="50" oninput="bodyHeightChange()" />
-              <span id="height-value">00</span>
+              <input type="range" id="height-range" min="10" max="20" value="15" oninput="bodyHeightChange()">
+              <span id="height-value">...</span>
+            </div>
+
+            <div class="slider">
+              <!--arm length slider-->
+              <label for="arm-length">arm length</label>
+              <input type="range" id="arm-length" min="3" max="20" value="15" oninput="armLengthChange()">
+              <span id="arm-length-value">...</span>
+            </div>
+
+            <div class="slider">
+              <!--legs length slider-->
+              <label for="leg-length">leg length</label>
+              <input type="range" id="leg-length" min="3" max="10" value="6" oninput="legLengthChange()">
+              <span id="leg-length-value">...</span>
             </div>
 
           </div>
 
           <div class="opt-wrapper">
-            <button id="submit-grid">create grid</button>
-            <button id="clear-grid">clear grid</button>
-            
             <!--color picker for body-->
-            <input type="color" id="color-picker" value="#000000" oninput="BodyColorChange()"/>
+            <label for="color-picker">body color</label>
+            <input type="color" id="color-picker" value="#000000" oninput="bodyColorChange()">
 
-            <button id="erase-btn">erase</button>
-            <button id="paint-btn">paint</button>
+            <!--color picker for arms-->
+            <label for="color-picker-arms">arms color</label>
+            <input type="color" id="color-picker-arms" value="#000000" oninput="armsColorChange()">
+
+            <button id="erase-btn">random</button>
+            <button id="paint-btn">random</button>
+
           </div>
 
         </div>
     </div>
 
-    <script>src="script.js"</script>
+    <script src="script.js"></script>
   
 </body>
 </html>
