@@ -17,20 +17,28 @@
     </div>
 
     <div class="canvas-bg">
-      <div id="arm1"></div>
 
-      <div id="body" class="gap">
-        <div id="eye">-</div>
-        <div id="eye">-</div>
-      </div>
+      <div id="upper-body">
 
-      <div id="arm2"></div>
+        <div id="arm1"></div>
+
+        <div id="body" class="gap">
+          <div id="eye1">•</div>
+          <div id="mouth">_</div>
+          <div id="eye2">•</div>
+        </div>
+
+        <div id="arm2"></div>
       
-      <div id="foot"></div>
+    </div>
+      
+    <div id="lower-body">
+      <div id="foot1"></div>
       <div id="leg1"></div>
       <div id="leg-gap"></div>
       <div id="leg2"></div>
-      <div id="foot"></div>
+      <div id="foot2"></div>
+    </div>
 
     </div>
 
@@ -77,9 +85,22 @@
             <label for="color-picker-arms">arms color</label>
             <input type="color" id="color-picker-arms" value="#000000" oninput="armsColorChange()">
 
-            <button id="erase-btn">random</button>
-            <button id="paint-btn">random</button>
+            <!--color picker for legs-->
+            <label for="color-picker-legs">legs color</label>
+            <input type="color" id="color-picker-legs" value="#000000" oninput="legsColorChange()">
 
+            <br>
+
+            <!--eye shuffler-->
+            <button id="shuffle-eye-forward" value="change eye (>)">change eye (>)</button>
+            <!-- <input type="button" id="shuffle-eye-backwards" value="change eye (<)"/> -->
+
+            <!---mouth shuffler-->
+            <button id="mouth-shuffler" value="change mouth">change mouth</button>
+
+            <!--character randomizer (generative outputs)-->
+            <button id="random-btn">random!</button>
+            
           </div>
 
         </div>
