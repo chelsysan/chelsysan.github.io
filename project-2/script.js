@@ -17,7 +17,9 @@ function bodyHeightChange() {
     heightValueText.innerHTML = changeBodyHeight.value;
 }
 
-//length of arms//
+
+
+//length of arms + thickness of arms//
 let armSlider = document.getElementById("arm-length");
 let armLengthValue = document.getElementById("arm-length-value");
 
@@ -27,7 +29,16 @@ function armLengthChange() {
     armLengthValue.innerHTML = armSlider.value;
 }
 
-//length of legs//
+let armThickSlider = document.getElementById("arm-thickness");
+
+function armHeightChange() {
+    arm1.style.height = armThickSlider.value + "vw";
+    arm2.style.height = armThickSlider.value + "vw";
+ }
+
+
+
+//length of legs + thickness of legs//
 let legSlider = document.getElementById("leg-length");
 let legLengthValue = document.getElementById("leg-length-value");
 
@@ -36,6 +47,15 @@ function legLengthChange() {
     leg2.style.height = legSlider.value + "vw"; 
     legLengthValue.innerHTML = legSlider.value;
 }
+
+let legThickness = document.getElementById("leg-thickness");
+
+function legWidthChange() {
+    leg1.style.width = legThickness.value + "vw";
+    leg2.style.width = legThickness.value + "vw";
+}
+
+
 
 //color picker for body//
 let colorPicker = document.getElementById("color-picker");
@@ -46,6 +66,8 @@ function bodyColorChange() {
     // document.body.style.backgroundColor = colorPicker.value;
 }
 
+
+
 //color picker for arms//
 let arm1 = document.getElementById("arm1");
 let arm2 = document.getElementById("arm2");
@@ -55,6 +77,8 @@ function armsColorChange() {
     arm1.style.backgroundColor = colorPickerArms.value;
     arm2.style.backgroundColor = colorPickerArms.value;
 }
+
+
 
 //color picker for legs//
 let leg1 = document.getElementById("leg1");
@@ -71,13 +95,25 @@ function legsColorChange() {
     foot2.style.backgroundColor = colorPickerLegs.value;
 }
 
+
+
+//color picker for face//
+let colorPickerFace = document.getElementById("color-picker-face");
+
+function faceColorChange() {
+    lefteye.style.color = colorPickerFace.value;
+    righteye.style.color = colorPickerFace.value;
+    mouth.style.color = colorPickerFace.value;
+}
+
+
+
 //eye selector//
 let lefteye = document.getElementById("eye1");
 let righteye = document.getElementById("eye2");
 
 let eyebtnforward = document.getElementById("shuffle-eye-forward");
-let eyebtnbackwards = document.getElementById("shuffle-eye-backwards");
-let eyeArray = ["•", "^", "-", ">","<", "o", "T", "v", "=", ",", "~", "!", "*", "+", "x"]
+let eyeArray = ["^", "-", ">","<", "o", "T", "v", "=", ",", "~", "!", "*", "x", "+", "•"]
 
 let index = 0
 
@@ -91,32 +127,34 @@ eyebtnforward.onclick = function() {
     }
 }
 
-/* eyebtnbackwards.onclick = function() {
-    lefteye.innerHTML = eyeArray[index];
-    righteye.innerHTML = eyeArray[index];
-    index = index - 1
 
-    if (index > 14) {
-        index = 0
-    }
-} */
 
 //mouth selector//
 let mouth = document.getElementById("mouth");
 let mouthShuffler = document.getElementById("mouth-shuffler");
 
-let mouthArray = [".", "w", "0", "u", "x"]
+let mouthArray = [".", "w", "u", "o", "0", "x", "3", "n", "#","m", "v","~", "p", "T", "_"]
 
 
 mouthShuffler.onclick = function() {
     mouth.innerHTML = mouthArray[index];
     index = index + 1
 
-    if (index > 4) {
+    if (index > 14) {
         index = 0
     }
 }
 
+
+
+//random output generator//
+let random = document.getElementById("random-btn");
+let randomMouth = Math.random() * mouthArray.length; 
+
+function randomEverything() {
+   
+
+}
 
 
 

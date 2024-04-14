@@ -13,7 +13,7 @@
 
 <body>
     <div class="title">
-       <header> * :˚₊‧ create your own minisona! ‧₊˚: *</header>
+       <header> * :˚₊‧ create your own pixsona! ‧₊˚: *</header>
     </div>
 
     <div class="canvas-bg">
@@ -49,21 +49,21 @@
             <div class="slider">
               <!--body width slider-->
               <label for="width-range">body width</label>
-              <input type="range" id="width-range" min="10" max="30" value="20" oninput="bodyWidthChange()">
+              <input type="range" id="width-range" min="9" max="30" value="20" oninput="bodyWidthChange()">
               <span id="width-value">...</span>
             </div>
             
             <div class="slider">
               <!--body height slider-->
               <label for="height-range">body length</label>
-              <input type="range" id="height-range" min="10" max="20" value="15" oninput="bodyHeightChange()">
+              <input type="range" id="height-range" min="9" max="20" value="15" oninput="bodyHeightChange()">
               <span id="height-value">...</span>
             </div>
 
             <div class="slider">
               <!--arm length slider-->
               <label for="arm-length">arm length</label>
-              <input type="range" id="arm-length" min="3" max="20" value="15" oninput="armLengthChange()">
+              <input type="range" id="arm-length" min="1" max="20" value="10" oninput="armLengthChange()">
               <span id="arm-length-value">...</span>
             </div>
 
@@ -72,6 +72,22 @@
               <label for="leg-length">leg length</label>
               <input type="range" id="leg-length" min="3" max="10" value="6" oninput="legLengthChange()">
               <span id="leg-length-value">...</span>
+            </div>
+
+          </div>
+
+          <div class="opt-wrapper">
+
+            <div class="slider">
+              <!--arm thickness slider-->
+              <label for="arm-thickness">arm thickness</label>
+              <input type="range" id="arm-thickness" min="1" max="5" value="3" oninput="armHeightChange()">
+            </div>
+
+            <div class="slider">
+              <!--leg thickness slider-->
+              <label for="leg-thickness">leg thickness</label>
+              <input type="range" id="leg-thickness" min="1" max="5" value="3" oninput="legWidthChange()">
             </div>
 
           </div>
@@ -89,18 +105,21 @@
             <label for="color-picker-legs">legs color</label>
             <input type="color" id="color-picker-legs" value="#000000" oninput="legsColorChange()">
 
-            <br>
+            <!--color picker for face-->
+            <label for="color-picker-face">face color</label>
+            <input type="color" id="color-picker-face" value="#000000" oninput="faceColorChange()">
+            
+          </div>
 
+          <div class="opt-wrapper">
             <!--eye shuffler-->
-            <button id="shuffle-eye-forward" value="change eye (>)">change eye (>)</button>
-            <!-- <input type="button" id="shuffle-eye-backwards" value="change eye (<)"/> -->
+            <button id="shuffle-eye-forward" value="change eye (>)">change eye</button>
 
             <!---mouth shuffler-->
             <button id="mouth-shuffler" value="change mouth">change mouth</button>
 
             <!--character randomizer (generative outputs)-->
-            <button id="random-btn">random!</button>
-            
+            <button id="random-btn" onclick="randomEverything()">random!</button>
           </div>
 
         </div>
