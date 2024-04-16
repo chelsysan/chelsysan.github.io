@@ -1,3 +1,19 @@
+//start button --> will activate customization options//
+let startButton = document.getElementById("start-button");
+let mainContent = document.getElementById("main-content");
+let titleBox = document.getElementById("title");
+let wrapperBox = document.getElementById("wrapper");
+
+function optionsAppear() {
+    startButton.style.display = "none";
+    mainContent.style.transform = "translate(-260px)";
+    titleBox.innerHTML = "* :˚₊‧ stylize your pixsona! ‧₊˚: *"
+    mainContent.style.transition = "0.7s";
+    wrapperBox.style.opacity = "1.0";
+    wrapperBox.style.transition = "1.2s";
+}
+
+
 let body = document.getElementById("body");
 
 //width and height for body//
@@ -30,10 +46,12 @@ function armLengthChange() {
 }
 
 let armThickSlider = document.getElementById("arm-thickness");
+let armThickValue = document.getElementById("armthick-value");
 
 function armHeightChange() {
     arm1.style.height = armThickSlider.value + "vw";
     arm2.style.height = armThickSlider.value + "vw";
+    armThickValue.innerHTML = armThickSlider.value;
  }
 
 
@@ -49,10 +67,12 @@ function legLengthChange() {
 }
 
 let legThickness = document.getElementById("leg-thickness");
+let legThickValue = document.getElementById("legthick-value");
 
 function legWidthChange() {
     leg1.style.width = legThickness.value + "vw";
     leg2.style.width = legThickness.value + "vw";
+    legThickValue.innerHTML = legThickness.value;
 }
 
 
@@ -155,6 +175,7 @@ function randomEverything() {
    
 
 }
+
 
 
 

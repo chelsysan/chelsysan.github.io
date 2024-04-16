@@ -1,3 +1,7 @@
+html {
+    min-height:100%;
+}
+
 * {
     font-family: "Micro 5", sans-serif;
     font-weight: 400;
@@ -6,9 +10,20 @@
 
 body {
     background-color: rgb(160, 240, 238);
+    height: 100%;
+    overflow: hidden;
 }
 
-.title {
+#main-content {
+    display: flex;
+    flex-direction: column;
+   
+    width: 60vw;
+    margin: auto;
+
+}
+
+#title {
     padding: 1vw;
     width: 55vw;
     margin: auto;
@@ -26,7 +41,7 @@ body {
     text-shadow: 0.2rem 0.2rem 0 #f99d1d;
 }
 
-.canvas-bg {
+#canvas-bg {
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -34,7 +49,7 @@ body {
     overflow: hidden;
     
     width: 55vw;
-    height: 30vw;
+    height: 37vw;
     padding: 1vw;
     margin-top: 2%;
     margin-left: auto;
@@ -44,6 +59,21 @@ body {
     outline: 0.3em solid black;
     border-radius: 3px;
     box-shadow: 10px 10px rgb(91, 170, 154);
+}
+
+#start-button {
+    display: flex;
+    align-self: center;
+    position: relative;
+    bottom: 1vw;
+    
+    font-size: 3vw;
+}
+
+h3:hover {
+    color:rgb(99, 241, 189);
+    font-size: 4vw;
+    cursor: pointer;
 }
 
 #upper-body {
@@ -119,19 +149,28 @@ body {
     align-self: flex-end;
 }
 
-.wrapper {
-    width: 100vmin;
+#wrapper {
+    width: 28vw;
+    height: 36vw;
     position: relative;
-    transform: translate(-50%, 10%);
+    transform: translate(40%, -100%);
     top: 50%;
     left: 50%;
-    padding: 80px 40px;
+    padding: 60px 40px;
 
     background-color: rgb(245, 245, 237);
     border-radius: 8px;
     outline: 3px solid;
+
+    opacity: 0;
+    transition: 0.7;
 }
 
+#wrapper-title {
+    font-size: 3vw;
+    text-align: center;
+    outline: 3px dashed;
+}
 
 label {
     display: block;
@@ -147,17 +186,18 @@ span {
 .opt-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: top;
     margin-bottom: 20px;
-    gap: 10px;
+    gap: 20px;
 }
 
 button {
     background-color:rgb(99, 241, 189);
+    font-size: 2vw;
     box-shadow: 3px 3px black;
     border: 0.1em solid;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px;
 }
 
 button:hover {
@@ -186,17 +226,18 @@ input[type=range]::-webkit-slider-runnable-track  {
 
 input[type=color] {
     border: none;
-    width: 4vw;
-    height: 4vw;
+    width: 2vw;
+    height: 2vw;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 3px;
-    border-radius: 1vw;
+    border-radius: 0.1em;
     background-color: rgb(255, 255, 255);
     box-shadow:  0.3em 0.3em #000000;
 }
 
 input[type="color"]::-webkit-color-swatch {
-	border-radius: 1vw;
-}
+	border-radius: 0.1em;
+} 
+
