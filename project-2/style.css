@@ -197,7 +197,7 @@ button {
     box-shadow: 3px 3px black;
     border: 0.1em solid;
     border-radius: 5px;
-    padding: 8px;
+    padding: 6px;
 }
 
 button:hover {
@@ -240,4 +240,19 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border-radius: 0.1em;
 } 
+
+input[type="text"] {
+    font-size: 2vw;
+}
+
+
+#character-name {
+    font-size: 4vw;
+    padding: 1vw;
+}
+
+#enter-name {
+    transform: translate(40%, 10%);
+}
+
 

@@ -133,7 +133,7 @@ let lefteye = document.getElementById("eye1");
 let righteye = document.getElementById("eye2");
 
 let eyebtnforward = document.getElementById("shuffle-eye-forward");
-let eyeArray = ["^", "-", ">","<", "o", "T", "v", "=", ",", "~", "!", "*", "x", "+", "•"]
+let eyeArray = ["^", "-", ">","<", "o", "T", "v", "=", ",", "~", "!", "*", "x", "+", "4", "8", "•"]
 
 let index = 0
 
@@ -142,7 +142,7 @@ eyebtnforward.onclick = function() {
     righteye.innerHTML = eyeArray[index];
     index = index + 1
 
-    if (index > 14) {
+    if (index > 16) {
         index = 0
     }
 }
@@ -166,15 +166,77 @@ mouthShuffler.onclick = function() {
 }
 
 
-
 //random output generator//
 let random = document.getElementById("random-btn");
+
+let randomEyes = Math.random() * eyeArray.length;
 let randomMouth = Math.random() * mouthArray.length; 
 
+let r = Math.floor(Math.random() * 256);
+let g = Math.floor(Math.random() * 256);
+let b = Math.floor(Math.random() * 256);
+
+let randomColor = "rgb(" + r + "," + g + "," + b + ")";
+
 function randomEverything() {
-   
+   changeBodyWidth.value = Math.floor(Math.random() * (30 - 9)) + 9;
+   body.style.width = changeBodyWidth.value + "vw";
+   widthValueText.innerHTML = changeBodyWidth.value;
+   body.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+
+   changeBodyHeight.value = Math.floor(Math.random() * (20 - 9)) + 9;
+   body.style.height = changeBodyHeight.value + "vw";
+   heightValueText.innerHTML = changeBodyHeight.value;
+
+   armSlider.value = Math.floor(Math.random() * (20 - 1)) + 1;
+   armLengthValue.innerHTML = armSlider.value;
+   arm1.style.width = armSlider.value + "vw";
+   arm2.style.width = armSlider.value + "vw";
+   arm1.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+   arm2.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+
+
+   legSlider.value = Math.floor(Math.random() * (13 - 3)) + 3;
+   legLengthValue.innerHTML = legSlider.value;
+   leg1.style.height = legSlider.value + "vw";
+   leg2.style.height = legSlider.value + "vw";
+   leg1.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+   leg2.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+   foot1.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+   foot2.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+
+
+   armThickSlider.value = Math.floor(Math.random() * (5 - 1)) + 1;
+   armThickValue.innerHTML = armThickSlider.value;
+   arm1.style.height = armThickSlider.value + "vw";
+   arm2.style.height = armThickSlider.value + "vw";
+
+
+   legThickness.value = Math.floor(Math.random() * (5 - 1)) + 1;
+   legThickValue.innerHTML = legThickness.value;
+   leg1.style.width = legThickness.value + "vw";
+   leg2.style.width = legThickness.value + "vw";
+
+
+   lefteye.innerHTML = eyeArray[Math.floor(Math.random() * eyeArray.length)];
+   righteye.innerHTML = eyeArray[Math.floor(Math.random() * eyeArray.length)];
+   lefteye.style.color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+   righteye.style.color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+
+   mouth.innerHTML = mouthArray[Math.floor(Math.random() * mouthArray.length)];
+   mouth.style.color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
 
 }
+
+//name for character//
+let characterName = document.getElementById("enter-name");
+let characterDiv = document.getElementById("character-name");
+
+function doChangeText() {
+
+    characterDiv.innerHTML = characterName.value;
+}
+
 
 
 

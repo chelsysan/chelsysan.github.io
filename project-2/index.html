@@ -20,6 +20,9 @@
     </div>
 
     <div id="canvas-bg">
+      
+    <div id="character-name">
+    </div>
 
       <div id="upper-body">
 
@@ -54,7 +57,7 @@
         <div class="options">
 
           <div id="wrapper-title">
-            <header>Character Options</header>
+            <header>character options</header>
           </div>
           <br>
           <br>
@@ -88,7 +91,7 @@
             <div class="slider">
               <!--legs length slider-->
               <label for="leg-length">leg length</label>
-              <input type="range" id="leg-length" min="3" max="10" value="6" oninput="legLengthChange()">
+              <input type="range" id="leg-length" min="3" max="13" value="8" oninput="legLengthChange()">
               <span id="leg-length-value">...</span> px
             </div>
           </div>
@@ -140,12 +143,13 @@
 
             <!---mouth shuffler-->
             <button id="mouth-shuffler" value="change mouth">change mouth</button>
-          </div>
+         
 
-          <!--character randomizer (generative outputs)-->
-          <button id="random-btn" onclick="randomEverything()">random!</button>
-
-        </div>
+            <!--character randomizer (generative outputs)-->
+            <button id="random-btn" onclick="randomEverything()">random!</button>
+         </div>
+         <br>
+         <input type="text" id="enter-name" placeholder="name your pixsona!" oninput="doChangeText()">
     </div>
 </div>
 
