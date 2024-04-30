@@ -1,0 +1,12 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 700;
+
+    text-align: center;
+
+    background-color: bisque;
+    color: rgb(64, 59, 42);
+}
+

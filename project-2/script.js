@@ -233,7 +233,6 @@ let characterName = document.getElementById("enter-name");
 let characterDiv = document.getElementById("character-name");
 
 function doChangeText() {
-
     characterDiv.innerHTML = characterName.value;
 }
 
